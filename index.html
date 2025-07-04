@@ -1,16 +1,154 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop Nieuwland - Premium Men's Grooming</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>BARBERSHOP NIEUWLAND</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>CLASSIC CUTS</h1>
+            <h2>MODERN STYLE</h2>
+            <p>Experience the finest in men's grooming with our traditional barbershop services combined with contemporary techniques.</p>
+            <a href="#contact" class="cta-button">BOOK APPOINTMENT</a>
+        </div>
+        <div class="hero-image">
+            <div class="barber-chair"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>OUR SERVICES</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">✂</div>
+                    <h3>CLASSIC HAIRCUT</h3>
+                    <p>Traditional cuts with modern precision</p>
+                    <span class="price">€25</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🪒</div>
+                    <h3>STRAIGHT RAZOR SHAVE</h3>
+                    <p>Hot towel treatment and precision shaving</p>
+                    <span class="price">€20</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💇</div>
+                    <h3>BEARD TRIM</h3>
+                    <p>Professional beard styling and maintenance</p>
+                    <span class="price">€15</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>DELUXE PACKAGE</h3>
+                    <p>Complete grooming experience</p>
+                    <span class="price">€50</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>MASTER BARBERS</h2>
+                    <p>With over 20 years of combined experience, our skilled barbers bring you the finest in traditional grooming techniques. We pride ourselves on attention to detail and customer satisfaction.</p>
+                    <p>Step into our shop and experience the timeless art of barbering in a comfortable, professional environment.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>20+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>VISIT US</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>ADDRESS</h3>
+                        <p>Nieuwland Street 123<br>Amsterdam, Netherlands</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>HOURS</h3>
+                        <p>Monday - Friday: 9:00 - 18:00<br>Saturday: 9:00 - 17:00<br>Sunday: Closed</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>CONTACT</h3>
+                        <p>Phone: +31 20 123 4567<br>Email: info@barbershopnieuwland.nl</p>
+                    </div>
+                </div>
+                <div class="appointment-form">
+                    <h3>BOOK APPOINTMENT</h3>
+                    <form>
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <select required>
+                            <option value="">Select Service</option>
+                            <option value="haircut">Classic Haircut</option>
+                            <option value="shave">Straight Razor Shave</option>
+                            <option value="beard">Beard Trim</option>
+                            <option value="deluxe">Deluxe Package</option>
+                        </select>
+                        <input type="date" required>
+                        <button type="submit">BOOK NOW</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Barbershop Nieuwland. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
