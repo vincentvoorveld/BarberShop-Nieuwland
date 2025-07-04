@@ -452,92 +452,136 @@ body {
 /* Contact Section */
 .contact {
     padding: 5rem 0;
-    background: #2a2a2a;
+    background: #f5f5f5;
 }
 
 .contact h2 {
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.contact .highlight {
     color: #d4af37;
+}
+
+.contact-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
     margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.contact-info {
+.contact-info-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-info-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.info-items {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-bottom: 2.5rem;
 }
 
-.info-item h3 {
-    font-family: 'Playfair Display', serif;
-    color: #d4af37;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.info-item p {
-    color: #ccc;
-    line-height: 1.8;
-}
-
-.appointment-form {
-    background: #1a1a1a;
-    padding: 2rem;
-    border-radius: 10px;
-}
-
-.appointment-form h3 {
-    font-family: 'Playfair Display', serif;
-    color: #d4af37;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.appointment-form form {
+.info-item {
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
 }
 
-.appointment-form input,
-.appointment-form select {
-    padding: 1rem;
-    border: 2px solid #3a3a3a;
-    background: #2a2a2a;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1rem;
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background: #d4af37;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
 }
 
-.appointment-form input:focus,
-.appointment-form select:focus {
-    outline: none;
-    border-color: #d4af37;
-}
-
-.appointment-form button {
-    background: linear-gradient(45deg, #d4af37, #f4d03f);
+.info-details h4 {
     color: #1a1a1a;
-    padding: 1rem;
-    border: none;
-    border-radius: 5px;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
+}
+
+.info-details p {
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-btn {
+    flex: 1;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
-.appointment-form button:hover {
+.call-btn {
+    background: #d4af37;
+    color: #1a1a1a;
+}
+
+.call-btn:hover {
+    background: #b8941f;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.whatsapp-btn {
+    background: #25d366;
+    color: #fff;
+}
+
+.whatsapp-btn:hover {
+    background: #128c7e;
+    transform: translateY(-2px);
+}
+
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    height: 450px;
+}
+
+.map-container iframe {
+    border-radius: 15px;
 }
 
 /* Footer */
@@ -591,6 +635,15 @@ body {
     
     .contact-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+    }
+    
+    .map-container {
+        height: 300px;
     }
 }
 
