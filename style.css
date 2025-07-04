@@ -200,23 +200,24 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
 }
 
 .service-card {
-    background: #f8f8f8;
+    background: #fff;
     padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
     position: relative;
     transition: all 0.3s ease;
     cursor: pointer;
-    min-height: 120px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .service-card:hover {
@@ -257,7 +258,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 9999;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
 }
