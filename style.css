@@ -523,6 +523,7 @@ body {
     justify-content: center;
     font-size: 1.5rem;
     flex-shrink: 0;
+    color: #1a1a1a;
 }
 
 .info-details h4 {
@@ -564,12 +565,15 @@ body {
 }
 
 .whatsapp-btn {
-    background: #25d366;
-    color: #fff;
+    background: #d4af37;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .whatsapp-btn:hover {
-    background: #128c7e;
+    background: #b8941f;
     transform: translateY(-2px);
 }
 
