@@ -127,10 +127,14 @@ body {
     max-width: 500px;
 }
 
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .cta-button {
     display: inline-block;
-    background: linear-gradient(45deg, #d4af37, #f4d03f);
-    color: #1a1a1a;
     padding: 1rem 2rem;
     text-decoration: none;
     font-weight: 600;
@@ -138,12 +142,31 @@ body {
     letter-spacing: 1px;
     border-radius: 5px;
     transition: all 0.3s ease;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.call-button {
+    background: linear-gradient(45deg, #d4af37, #f4d03f);
+    color: #1a1a1a;
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
 }
 
-.cta-button:hover {
+.call-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.whatsapp-button {
+    background: linear-gradient(45deg, #25d366, #128c7e);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
 .hero-image {
@@ -153,23 +176,12 @@ body {
     align-items: center;
 }
 
-.barber-chair {
-    width: 300px;
-    height: 400px;
-    background: linear-gradient(45deg, #3a3a3a, #2a2a2a);
-    border-radius: 20px;
-    position: relative;
+.barbershop-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-
-.barber-chair::before {
-    content: '✂';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
-    color: #d4af37;
+    border: 3px solid #d4af37;
 }
 
 /* Services Section */
@@ -406,6 +418,15 @@ body {
     
     .hero-content h2 {
         font-size: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        min-width: 250px;
     }
     
     .about-content {
