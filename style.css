@@ -591,13 +591,101 @@ body {
 /* Footer */
 .footer {
     background: #1a1a1a;
-    padding: 2rem 0;
-    text-align: center;
+    padding: 3rem 0 1rem 0;
     border-top: 1px solid #3a3a3a;
 }
 
-.footer p {
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    color: #d4af37;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
     color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #d4af37;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.facebook-btn {
+    background: #1877f2;
+    color: #fff;
+}
+
+.facebook-btn:hover {
+    background: #166fe5;
+    transform: translateY(-2px);
+}
+
+.instagram-btn {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #fff;
+}
+
+.instagram-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(188, 24, 136, 0.3);
+}
+
+.social-btn.whatsapp-btn {
+    background: #25d366;
+    color: #fff;
+}
+
+.social-btn.whatsapp-btn:hover {
+    background: #128c7e;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #3a3a3a;
+}
+
+.footer-bottom p {
+    color: #ccc;
+    font-size: 0.9rem;
 }
 
 /* Responsive Design */
@@ -656,5 +744,13 @@ body {
         grid-template-columns: 1fr;
     }
     
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
     
+    .social-buttons {
+        justify-content: center;
+    }
 }
