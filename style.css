@@ -277,7 +277,7 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
     padding: 0 2rem;
@@ -892,7 +892,7 @@ body {
         min-height: 70vh;
         flex-direction: column;
         text-align: center;
-        padding: 100px 2rem 40px 2rem;
+        padding: 90px 2rem 40px 2rem;
         gap: 1rem;
     }
     
@@ -904,6 +904,7 @@ body {
     .hero-content h1 {
         font-size: 2.8rem;
         margin-bottom: 1rem;
+        margin-top: 0.5rem;
     }
     
     .hero-content p {
@@ -917,6 +918,11 @@ body {
     
     .barbershop-photo {
         max-width: 400px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
     }
 
     .footer-content {
@@ -963,11 +969,12 @@ body {
     
     .hero {
         min-height: 60vh;
-        padding: 90px 1rem 30px 1rem;
+        padding: 80px 1rem 30px 1rem;
     }
     
     .hero-content h1 {
         font-size: 2.2rem;
+        margin-top: 1rem;
     }
     
     .hero-image {
@@ -986,6 +993,12 @@ body {
     .services-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .service-card {
+        max-width: 100%;
+        margin: 0 auto;
     }
     
     .workplace-grid {
@@ -1015,5 +1028,42 @@ body {
     
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 70px 0.5rem 20px 0.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .service-card {
+        padding: 1.2rem;
+    }
+    
+    .services {
+        padding: 4rem 0;
+        margin: 2rem 0.5rem;
+    }
+    
+    .workplace,
+    .reviews,
+    .contact {
+        padding: 4rem 0;
+        margin: 2rem 0.5rem;
     }
 }
