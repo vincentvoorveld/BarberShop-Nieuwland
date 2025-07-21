@@ -968,13 +968,14 @@ body {
     }
     
     .hero {
-        min-height: 60vh;
-        padding: 80px 1rem 30px 1rem;
+        min-height: 70vh;
+        padding: 100px 1rem 30px 1rem;
     }
     
     .hero-content h1 {
-        font-size: 2.2rem;
-        margin-top: 1rem;
+        font-size: 2.4rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
     }
     
     .hero-image {
@@ -993,12 +994,15 @@ body {
     .services-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        padding: 0 1rem;
+        padding: 0 1.5rem;
+        max-width: 400px;
+        margin: 0 auto;
     }
     
     .service-card {
-        max-width: 100%;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0;
+        padding: 1.5rem;
     }
     
     .workplace-grid {
@@ -1033,26 +1037,32 @@ body {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 70px 0.5rem 20px 0.5rem;
+        padding: 90px 1rem 20px 1rem;
+        min-height: 65vh;
     }
     
     .hero-content h1 {
-        font-size: 1.8rem;
-        margin-top: 1.5rem;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
     }
     
     .hero-content p {
         font-size: 1rem;
+        margin-bottom: 2rem;
     }
     
     .services-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
-        padding: 0 0.5rem;
+        padding: 0 1rem;
+        max-width: 350px;
+        margin: 0 auto;
     }
     
     .service-card {
         padding: 1.2rem;
+        width: 100%;
     }
     
     .services {
